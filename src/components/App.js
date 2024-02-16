@@ -17,18 +17,18 @@ class App extends React.Component{
         }) 
 
         console.log(response.data.results.length)
-        this.setState({images: response.data.results})
+        this.setState({images: response.data.results}) 
     }
+    
     render(){
         return(
-            <div className='ui container' style={{marginTop:'10px'}}>   
+            <div className='ui container' style={{marginTop:'10px'}}>
                 <SearchBar onInnerSubmit={this.onSearchSubmit}/>
 
                 <ImageList images={this.state.images}/>     
-                
             </div>
            
-        )
+        ) 
     }
 }
 
