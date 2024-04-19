@@ -13,12 +13,12 @@ class SearchBar extends React.Component {
         <div className ='ui segment'>
         <form onSubmit={this.onFormSubmit} className ='ui form'>
             <div className ='field'>
-                <label>Image Search</label>
+                <label>Seacrh for an Image</label>
                 <input 
                 type='text'  
                 value = {this.state.term} 
                 onChange = { e => this.setState({term: e.target.value}) } />
-                <p> {this.state.term}</p>  
+                {/* <p> {this.state.term}</p>   */}
             </div> 
         </form>
      </div> 

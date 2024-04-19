@@ -7,9 +7,16 @@ const ImageList = (props) => {
         return <ImageCard key={image.id} imageview={image}/>
    });
 
-  return ( 
+  return ( <>
+
+       <h1>Images are Display Below</h1>
+
+      <div className='image_list'> {images} </div>
+  
+  
+  </>
     
-    <div className='image_list'> {images} </div>
+   
   )
   
 }
