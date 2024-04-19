@@ -8,6 +8,7 @@ const ImageList = (props) => {
    });
 
   return ( 
+    
     <div className='image_list'> {images} </div>
   )
   
